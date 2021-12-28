@@ -1,6 +1,6 @@
 body {
   background-color: aqua;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -9,6 +9,10 @@ body {
 
 .nav-link:hover {
   color: white !important;
+}
+
+.header-logo {
+  max-width: 100%;
 }
 
 .border-black {
@@ -105,6 +109,18 @@ iframe {
 .additional-works {
   font-size: 17px;
   text-align: center;
+}
+
+@media (min-width: 320px) {
+  * {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 769px) {
+  * {
+    overflow-x: initial;
+  }
 }
 /*
 .slider {
